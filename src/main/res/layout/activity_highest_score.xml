@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_highest_score"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF7043"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="16dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sample.multiplechoicequiz.HighestScoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="107dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textScore"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:background="#F4511E"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="Your score:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textHighScore"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:background="#FF5722"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="Highest score:"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="100dp"
+            android:layout_weight="0.04"
+            android:background="#FF3D00"
+            android:onClick="onClick"
+            android:text="Try again"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</RelativeLayout>
